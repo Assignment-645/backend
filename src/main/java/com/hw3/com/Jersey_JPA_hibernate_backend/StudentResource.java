@@ -44,7 +44,7 @@ public class StudentResource {
 	public List<Student> allstudentrecords() {
 		EntityManager em =factory.createEntityManager();
 		String all= "select e from Student e";
-		TypedQuery<Student> tq = 	em.createQuery(all, Student.class);
+		TypedQuery<Student> tq = em.createQuery(all, Student.class);
 		List<Student> sall = tq.getResultList();
 		return sall;	
 	}

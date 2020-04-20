@@ -9,6 +9,10 @@
             <param-name>jersey.config.server.provider.packages</param-name>
             <param-value>com.hw3.com.Jersey_JPA_hibernate_backend</param-value>
         </init-param>
+        <init-param>
+            <param-name>javax.ws.rs.container.ContainerResponseFilter</param-name>
+            <param-value>com.hw3.com.Jersey_JPA_hibernate_backend.CORSFilter</param-value>
+        </init-param>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
