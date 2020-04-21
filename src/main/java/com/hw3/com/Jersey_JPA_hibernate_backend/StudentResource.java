@@ -30,7 +30,7 @@ public class StudentResource {
 			etrans.commit();
 		    }
 		catch (Exception e) {
-			System.out.println("catched an exception");
+			System.out.println("Exception");
 			etrans.rollback();
 			e.printStackTrace();	
 		}
